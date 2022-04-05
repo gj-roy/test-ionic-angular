@@ -4,20 +4,15 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      Hello World
+      Hello {{id}}
     </ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <ion-card class="welcome-card">
-    <ion-img src="/assets/shapes.svg"></ion-img>
-    <ion-card-header>
-      <ion-card-subtitle>I am just getting started</ion-card-subtitle>
-      <ion-card-title>Welcome to My World</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <p>I can modify my app as I like, muhahahahaha !</p>
-    </ion-card-content>
+  <div>
+    <ion-text color="primary">
+      <h1>Test navigation</h1>
+    </ion-text>
     <ion-button href="/animals">href ANIMALS</ion-button>
     <ion-button (click)="go123()">navigate ANIMALS</ion-button>
     <ion-button href="/animals/someid-by-href">href ANIMALS WITH ID</ion-button>
@@ -26,5 +21,9 @@
     <ion-button [routerLink]="['/animals/someid-by-routerLink']">routerLink ANIMALS WITH ID</ion-button>
     <ion-button (click)="goAndPassData('toi doi bung qua, toi muon di an lau bo')">go and pass data</ion-button>
 
-  </ion-card>
+    <ion-text color="primary">
+      <h1>Component</h1>
+    </ion-text>
+    <ion-button (click)="goComponent()">Component</ion-button>
+  </div>
 </ion-content>
