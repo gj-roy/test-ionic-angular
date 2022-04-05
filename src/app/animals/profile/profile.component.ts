@@ -9,10 +9,13 @@ import { NavController } from '@ionic/angular';
 })
 export class ProfileComponent implements OnInit {
   id: any;
+  someData: any;
+
   constructor(private route: ActivatedRoute, private navController: NavController) { }
 
   ngOnInit() {
     this.id = this.route.snapshot.paramMap.get('id');
+    this.someData = this.route.snapshot.paramMap.get('someData');
   }
   goBack() {
     this.navController.back();

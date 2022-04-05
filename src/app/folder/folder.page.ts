@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-folder',
@@ -21,5 +22,9 @@ export class FolderPage implements OnInit {
 
   go1234() {
     this.router.navigate(['animals/someid-by-navigate']);
+  }
+
+  goAndPassData() {
+    this.router.navigate(['animals/goAndPassData', { someData: "This is some data" }]);
   }
 }
