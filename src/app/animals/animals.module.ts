@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 import { AnimalsPageRoutingModule } from './animals-routing.module';
 
 import { AnimalsPage } from './animals.page';
+import { Routes } from '@angular/router';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   imports: [
@@ -15,6 +17,6 @@ import { AnimalsPage } from './animals.page';
     IonicModule,
     AnimalsPageRoutingModule
   ],
-  declarations: [AnimalsPage]
+  declarations: [AnimalsPage, ProfileComponent]
 })
-export class AnimalsPageModule {}
+export class AnimalsPageModule { }
