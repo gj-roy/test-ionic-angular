@@ -18,4 +18,8 @@ export class FolderPage implements OnInit {
   go123() {
     this.router.navigate(['animals']);
   }
+
+  go1234() {
+    this.router.navigate(['animals/someid-by-navigate']);
+  }
 }
