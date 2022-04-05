@@ -24,7 +24,7 @@ export class FolderPage implements OnInit {
     this.router.navigate(['animals/someid-by-navigate']);
   }
 
-  goAndPassData() {
-    this.router.navigate(['animals/goAndPassData', { someData: "This is some data" }]);
+  goAndPassData(data: string) {
+    this.router.navigate(['animals/goAndPassData', { someData: data }]);
   }
 }
