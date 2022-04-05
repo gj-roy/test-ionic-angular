@@ -18,9 +18,12 @@
     <ion-card-content>
       <p>I can modify my app as I like, muhahahahaha !</p>
     </ion-card-content>
-    <ion-button href="/animals">ANIMALS</ion-button>
-    <ion-button (click)="go123()">Go go go 123</ion-button>
+    <ion-button href="/animals">href ANIMALS</ion-button>
+    <ion-button (click)="go123()">navigate ANIMALS</ion-button>
     <ion-button href="/animals/someid-by-href">href ANIMALS WITH ID</ion-button>
     <ion-button (click)="go1234()">navigate ANIMALS WITH ID</ion-button>
+    <ion-button [routerLink]="['/animals']">routerLink ANIMALS</ion-button>
+    <ion-button [routerLink]="['/animals/someid-by-routerLink']">routerLink ANIMALS WITH ID</ion-button>
+
   </ion-card>
 </ion-content>
