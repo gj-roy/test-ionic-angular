@@ -14,6 +14,6 @@ export class AnimalsPage implements OnInit {
   }
 
   goBack() {
-    this.router.navigate(['folder.page']);
+    this.router.navigate(['folder/Inbox']);
   }
 }
