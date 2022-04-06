@@ -21,4 +21,16 @@ export class AlertPage implements OnInit {
     });
     await alert.present();
   }
+
+  async showAlert() {
+    const alert = await alertController.create({
+      header: 'Alert',
+      subHeader: 'SubTitle',
+      message: 'This is an alert message',
+      buttons: ['OK']
+    });
+    await alert.present();
+    const result = await alert.onDidDismiss();
+    console.log(result);
+  }
 }
