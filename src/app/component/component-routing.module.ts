@@ -71,6 +71,10 @@ const routes: Routes = [
     path: 'note',
     loadChildren: () => import('./note/note.module').then( m => m.NotePageModule)
   },
+  {
+    path: 'progress',
+    loadChildren: () => import('./progress/progress.module').then( m => m.ProgressPageModule)
+  },
 
 
 ];

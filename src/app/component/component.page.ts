@@ -61,4 +61,7 @@ export class ComponentPage implements OnInit {
   goNote() {
     this.router.navigate(['component/note']);
   }
+  goProgress() {
+    this.router.navigate(['component/progress']);
+  }
 }
