@@ -43,7 +43,11 @@ const routes: Routes = [
   {
     path: 'chip',
     loadChildren: () => import('./chip/chip.module').then( m => m.ChipPageModule)
+  },  {
+    path: 'fab',
+    loadChildren: () => import('./fab/fab.module').then( m => m.FabPageModule)
   },
+
 
 ];
 
