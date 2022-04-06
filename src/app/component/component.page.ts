@@ -34,4 +34,7 @@ export class ComponentPage implements OnInit {
   goCard() {
     this.router.navigate(['component/card']);
   }
+  goCheckbox() {
+    this.router.navigate(['component/checkbox']);
+  }
 }
