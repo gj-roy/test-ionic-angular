@@ -76,4 +76,7 @@ export class ComponentPage implements OnInit {
   goSlides() {
     this.router.navigate(['component/slides']);
   }
+  goSpinner() {
+    this.router.navigate(['component/spinner']);
+  }
 }

@@ -91,6 +91,10 @@ const routes: Routes = [
     path: 'slides',
     loadChildren: () => import('./slides/slides.module').then( m => m.SlidesPageModule)
   },
+  {
+    path: 'spinner',
+    loadChildren: () => import('./spinner/spinner.module').then( m => m.SpinnerPageModule)
+  },
 
 
 ];
