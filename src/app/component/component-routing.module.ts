@@ -103,6 +103,10 @@ const routes: Routes = [
     path: 'thumbnail',
     loadChildren: () => import('./thumbnail/thumbnail.module').then( m => m.ThumbnailPageModule)
   },
+  {
+    path: 'toast',
+    loadChildren: () => import('./toast/toast.module').then( m => m.ToastPageModule)
+  },
 
 
 ];

@@ -85,4 +85,7 @@ export class ComponentPage implements OnInit {
   goThumbnail() {
     this.router.navigate(['component/thumbnail']);
   }
+  goToast() {
+    this.router.navigate(['component/toast']);
+  }
 }
