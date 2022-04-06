@@ -40,6 +40,9 @@ export class ComponentPage implements OnInit {
   goChip() {
     this.router.navigate(['component/chip']);
   }
+  goContent() {
+    this.router.navigate(['component/content']);
+  }
   goFab() {
     this.router.navigate(['component/fab']);
   }
