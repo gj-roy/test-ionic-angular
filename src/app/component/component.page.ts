@@ -88,4 +88,7 @@ export class ComponentPage implements OnInit {
   goToast() {
     this.router.navigate(['component/toast']);
   }
+  goToggle() {
+    this.router.navigate(['component/toggle']);
+  }
 }
