@@ -75,6 +75,10 @@ const routes: Routes = [
     path: 'progress',
     loadChildren: () => import('./progress/progress.module').then( m => m.ProgressPageModule)
   },
+  {
+    path: 'radio',
+    loadChildren: () => import('./radio/radio.module').then( m => m.RadioPageModule)
+  },
 
 
 ];

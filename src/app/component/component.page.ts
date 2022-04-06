@@ -64,4 +64,7 @@ export class ComponentPage implements OnInit {
   goProgress() {
     this.router.navigate(['component/progress']);
   }
+  goRadio() {
+    this.router.navigate(['component/radio']);
+  }
 }
