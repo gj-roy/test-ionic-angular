@@ -70,4 +70,7 @@ export class ComponentPage implements OnInit {
   goRange() {
     this.router.navigate(['component/range']);
   }
+  goSelect() {
+    this.router.navigate(['component/select']);
+  }
 }
