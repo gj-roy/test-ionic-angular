@@ -118,4 +118,46 @@ export class AlertPage implements OnInit {
     });
     await alert.present();
   }
+
+  async showCheckBoxAlert() {
+    const alert = await alertController.create({
+      header: 'What is your favorite Programming Language?',
+      inputs: [
+        {
+          name: 'checkbox 1',
+          type: 'checkbox',
+          label: 'Java',
+          value: 'Java',
+          checked: true,
+        },
+        {
+          name: 'checkbox 2',
+          type: 'checkbox',
+          label: 'Android',
+          value: 'Android',
+        },
+        {
+          name: 'checkbox 3',
+          type: 'checkbox',
+          label: 'Python',
+          value: 'Python',
+        },
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          handler: data => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Save',
+          handler: data => {
+            console.log('Saved clicked');
+          }
+        }
+      ]
+    });
+    await alert.present();
+  }
 }
