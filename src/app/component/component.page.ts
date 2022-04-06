@@ -28,4 +28,43 @@ export class ComponentPage implements OnInit {
   goBadge() {
     this.router.navigate(['component/badge']);
   }
+  goButton() {
+    this.router.navigate(['component/button']);
+  }
+  goCard() {
+    this.router.navigate(['component/card']);
+  }
+  goCheckbox() {
+    this.router.navigate(['component/checkbox']);
+  }
+  goChip() {
+    this.router.navigate(['component/chip']);
+  }
+  goFab() {
+    this.router.navigate(['component/fab']);
+  }
+  goGrid() {
+    this.router.navigate(['component/grid']);
+  }
+  goItem() {
+    this.router.navigate(['component/item']);
+  }
+  goItemGroup() {
+    this.router.navigate(['component/item-group']);
+  }
+  goList() {
+    this.router.navigate(['component/list']);
+  }
+  goNav() {
+    this.router.navigate(['component/nav']);
+  }
+  goNote() {
+    this.router.navigate(['component/note']);
+  }
+  goProgress() {
+    this.router.navigate(['component/progress']);
+  }
+  goRadio() {
+    this.router.navigate(['component/radio']);
+  }
 }

@@ -27,7 +27,60 @@ const routes: Routes = [
   {
     path: 'badge',
     loadChildren: () => import('./badge/badge.module').then( m => m.BadgePageModule)
-  }
+  },
+  {
+    path: 'button',
+    loadChildren: () => import('./button/button.module').then( m => m.ButtonPageModule)
+  },
+  {
+    path: 'card',
+    loadChildren: () => import('./card/card.module').then( m => m.CardPageModule)
+  },
+  {
+    path: 'checkbox',
+    loadChildren: () => import('./checkbox/checkbox.module').then( m => m.CheckboxPageModule)
+  },
+  {
+    path: 'chip',
+    loadChildren: () => import('./chip/chip.module').then( m => m.ChipPageModule)
+  },  {
+    path: 'fab',
+    loadChildren: () => import('./fab/fab.module').then( m => m.FabPageModule)
+  },
+  {
+    path: 'grid',
+    loadChildren: () => import('./grid/grid.module').then( m => m.GridPageModule)
+  },
+  {
+    path: 'item-group',
+    loadChildren: () => import('./item-group/item-group.module').then( m => m.ItemGroupPageModule)
+  },
+  {
+    path: 'item',
+    loadChildren: () => import('./item/item.module').then( m => m.ItemPageModule)
+  },
+  {
+    path: 'list',
+    loadChildren: () => import('./list/list.module').then( m => m.ListPageModule)
+  },
+  {
+    path: 'nav',
+    loadChildren: () => import('./nav/nav.module').then( m => m.NavPageModule)
+  },
+  {
+    path: 'note',
+    loadChildren: () => import('./note/note.module').then( m => m.NotePageModule)
+  },
+  {
+    path: 'progress',
+    loadChildren: () => import('./progress/progress.module').then( m => m.ProgressPageModule)
+  },
+  {
+    path: 'radio',
+    loadChildren: () => import('./radio/radio.module').then( m => m.RadioPageModule)
+  },
+
+
 ];
 
 @NgModule({
