@@ -77,4 +77,45 @@ export class AlertPage implements OnInit {
     });
     await prompt.present();
   }
+
+  async showRadio() {
+    const alert = await alertController.create({
+      inputs: [
+        {
+          name: 'radio 1',
+          type: 'radio',
+          label: 'Green',
+          value: 'green',
+          checked: true,
+        },
+        {
+          name: 'radio 2',
+          type: 'radio',
+          label: 'Black',
+          value: 'black',
+        },
+        {
+          name: 'radio 3',
+          type: 'radio',
+          label: 'Red',
+          value: 'red',
+        },
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          handler: data => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Save',
+          handler: data => {
+            console.log('Saved clicked');
+          }
+        }
+      ]
+    });
+    await alert.present();
+  }
 }
