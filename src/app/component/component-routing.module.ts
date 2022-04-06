@@ -55,6 +55,10 @@ const routes: Routes = [
     path: 'item-group',
     loadChildren: () => import('./item-group/item-group.module').then( m => m.ItemGroupPageModule)
   },
+  {
+    path: 'item',
+    loadChildren: () => import('./item/item.module').then( m => m.ItemPageModule)
+  },
 
 
 ];

@@ -46,6 +46,9 @@ export class ComponentPage implements OnInit {
   goGrid() {
     this.router.navigate(['component/grid']);
   }
+  goItem() {
+    this.router.navigate(['component/item']);
+  }
   goItemGroup() {
     this.router.navigate(['component/item-group']);
   }
