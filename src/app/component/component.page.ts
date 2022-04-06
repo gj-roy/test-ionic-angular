@@ -67,4 +67,7 @@ export class ComponentPage implements OnInit {
   goRadio() {
     this.router.navigate(['component/radio']);
   }
+  goRange() {
+    this.router.navigate(['component/range']);
+  }
 }

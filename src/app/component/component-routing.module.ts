@@ -79,6 +79,10 @@ const routes: Routes = [
     path: 'radio',
     loadChildren: () => import('./radio/radio.module').then( m => m.RadioPageModule)
   },
+  {
+    path: 'range',
+    loadChildren: () => import('./range/range.module').then( m => m.RangePageModule)
+  },
 
 
 ];
