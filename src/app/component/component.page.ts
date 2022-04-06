@@ -22,4 +22,7 @@ export class ComponentPage implements OnInit {
   goAlert() {
     this.router.navigate(['component/alert']);
   }
+  goAvatar() {
+    this.router.navigate(['component/avatar']);
+  }
 }
