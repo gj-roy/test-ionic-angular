@@ -95,6 +95,10 @@ const routes: Routes = [
     path: 'spinner',
     loadChildren: () => import('./spinner/spinner.module').then( m => m.SpinnerPageModule)
   },
+  {
+    path: 'text',
+    loadChildren: () => import('./text/text.module').then( m => m.TextPageModule)
+  },
 
 
 ];

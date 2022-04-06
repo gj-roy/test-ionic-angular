@@ -79,4 +79,7 @@ export class ComponentPage implements OnInit {
   goSpinner() {
     this.router.navigate(['component/spinner']);
   }
+  goText() {
+    this.router.navigate(['component/text']);
+  }
 }
