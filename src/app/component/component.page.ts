@@ -19,4 +19,7 @@ export class ComponentPage implements OnInit {
   goActionSheet() {
     this.router.navigate(['component/action-sheet']);
   }
+  goAlert() {
+    this.router.navigate(['component/alert']);
+  }
 }
