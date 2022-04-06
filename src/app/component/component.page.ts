@@ -52,4 +52,7 @@ export class ComponentPage implements OnInit {
   goItemGroup() {
     this.router.navigate(['component/item-group']);
   }
+  goList() {
+    this.router.navigate(['component/list']);
+  }
 }
