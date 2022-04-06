@@ -99,6 +99,10 @@ const routes: Routes = [
     path: 'text',
     loadChildren: () => import('./text/text.module').then( m => m.TextPageModule)
   },
+  {
+    path: 'thumbnail',
+    loadChildren: () => import('./thumbnail/thumbnail.module').then( m => m.ThumbnailPageModule)
+  },
 
 
 ];
