@@ -87,6 +87,10 @@ const routes: Routes = [
     path: 'select',
     loadChildren: () => import('./select/select.module').then( m => m.SelectPageModule)
   },
+  {
+    path: 'slides',
+    loadChildren: () => import('./slides/slides.module').then( m => m.SlidesPageModule)
+  },
 
 
 ];

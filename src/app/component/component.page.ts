@@ -73,4 +73,7 @@ export class ComponentPage implements OnInit {
   goSelect() {
     this.router.navigate(['component/select']);
   }
+  goSlides() {
+    this.router.navigate(['component/slides']);
+  }
 }
