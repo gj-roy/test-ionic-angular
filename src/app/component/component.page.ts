@@ -16,4 +16,7 @@ export class ComponentPage implements OnInit {
   goAccordion() {
     this.router.navigate(['component/accordion']);
   }
+  goActionSheet() {
+    this.router.navigate(['component/action-sheet']);
+  }
 }

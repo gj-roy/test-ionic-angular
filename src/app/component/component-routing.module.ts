@@ -11,6 +11,10 @@ const routes: Routes = [
   {
     path: 'accordion',
     loadChildren: () => import('./accordion/accordion.module').then( m => m.AccordionPageModule)
+  },
+  {
+    path: 'action-sheet',
+    loadChildren: () => import('./action-sheet/action-sheet.module').then( m => m.ActionSheetPageModule)
   }
 ];
 
