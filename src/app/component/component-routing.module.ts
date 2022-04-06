@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: ComponentPage
+  },
+  {
+    path: 'accordion',
+    loadChildren: () => import('./accordion/accordion.module').then( m => m.AccordionPageModule)
   }
 ];
 

@@ -13,7 +13,7 @@ export class ComponentPage implements OnInit {
   ngOnInit() {
   }
 
-  goComponent() {
-    this.router.navigate(['component']);
+  goAccordion() {
+    this.router.navigate(['component/accordion']);
   }
 }
