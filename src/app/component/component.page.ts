@@ -31,4 +31,7 @@ export class ComponentPage implements OnInit {
   goButton() {
     this.router.navigate(['component/button']);
   }
+  goCard() {
+    this.router.navigate(['component/card']);
+  }
 }
