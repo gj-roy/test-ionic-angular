@@ -67,6 +67,10 @@ const routes: Routes = [
     path: 'nav',
     loadChildren: () => import('./nav/nav.module').then( m => m.NavPageModule)
   },
+  {
+    path: 'note',
+    loadChildren: () => import('./note/note.module').then( m => m.NotePageModule)
+  },
 
 
 ];

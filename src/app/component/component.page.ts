@@ -58,4 +58,7 @@ export class ComponentPage implements OnInit {
   goNav() {
     this.router.navigate(['component/nav']);
   }
+  goNote() {
+    this.router.navigate(['component/note']);
+  }
 }
