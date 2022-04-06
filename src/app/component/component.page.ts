@@ -43,4 +43,7 @@ export class ComponentPage implements OnInit {
   goFab() {
     this.router.navigate(['component/fab']);
   }
+  goGrid() {
+    this.router.navigate(['component/grid']);
+  }
 }
