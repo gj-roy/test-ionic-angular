@@ -1,9 +1,19 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>component</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Component
+    </ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
-
+  <div class="ion-padding-start ion-padding-end">
+    <ion-button (click)="goAccordion()">component</ion-button>
+    <ion-button (click)="goActionSheet()">action-sheet</ion-button>
+    <ion-button (click)="goAlert()">alert</ion-button>
+    <ion-button (click)="goAvatar()">avatar</ion-button>
+    <ion-button (click)="goBadge()">badge</ion-button>
+  </div>
 </ion-content>

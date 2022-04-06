@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-component',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComponentPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  goAccordion() {
+    this.router.navigate(['component/accordion']);
+  }
+  goActionSheet() {
+    this.router.navigate(['component/action-sheet']);
+  }
+  goAlert() {
+    this.router.navigate(['component/alert']);
+  }
+  goAvatar() {
+    this.router.navigate(['component/avatar']);
+  }
+  goBadge() {
+    this.router.navigate(['component/badge']);
+  }
 }
