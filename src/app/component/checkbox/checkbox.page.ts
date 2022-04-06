@@ -12,4 +12,10 @@ export class CheckboxPage implements OnInit {
   ngOnInit() {
   }
 
+  public form = [
+    { val: 'Pok?mon Yellow', isChecked: false },
+    { val: 'Super Metroid', isChecked: true },
+    { val: 'Mega Man X', isChecked: false },
+    { val: 'Spider Man', isChecked: true }
+  ];
 }

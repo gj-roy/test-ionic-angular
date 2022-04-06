@@ -63,4 +63,53 @@
       <ion-label>Bronn</ion-label>
     </ion-item>
   </ion-list>
+
+  <!-- Default Checkbox -->
+  <div>
+    <ion-checkbox></ion-checkbox>
+    <ion-label> Default</ion-label>
+  </div>
+  <!-- Disabled Checkbox -->
+  <div>
+    <ion-checkbox disabled="true"></ion-checkbox>
+    <ion-label> Disabled</ion-label>
+  </div>
+  <!-- Checked Checkbox -->
+  <div>
+    <ion-checkbox checked="true"></ion-checkbox>
+    <ion-label> Checked</ion-label>
+  </div>
+  <!-- Checkbox Colors -->
+  <ul>
+    <li>
+      <ion-checkbox color="primary" checked="false"></ion-checkbox>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <ion-checkbox color="secondary" checked="true"></ion-checkbox>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <ion-checkbox color="light" checked="true"></ion-checkbox>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <ion-checkbox color="dark" checked="false"></ion-checkbox>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <ion-checkbox color="danger" checked="true"></ion-checkbox>
+    </li>
+  </ul>
+
+  <ion-list>  
+    <ion-item *ngFor="let entry of form">  
+      <ion-label>{{entry.val}}</ion-label>  
+      <ion-checkbox slot="start" [(ngModel)]="entry.isChecked"></ion-checkbox>  
+    </ion-item>  
+  </ion-list> 
 </ion-content>

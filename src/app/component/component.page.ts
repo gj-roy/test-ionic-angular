@@ -91,4 +91,7 @@ export class ComponentPage implements OnInit {
   goToggle() {
     this.router.navigate(['component/toggle']);
   }
+  goCheckBox() {
+    this.router.navigate(['component/checkbox']);
+  }
 }
