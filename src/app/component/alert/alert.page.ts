@@ -43,4 +43,38 @@ export class AlertPage implements OnInit {
     });
     await alert.present();
   }
+
+  async showPrompt() {
+    const prompt = await alertController.create({
+      header: 'Album',
+      message: 'Enter a name for this new album',
+      inputs: [
+        {
+          name: 'name1',
+          type: 'text',
+          placeholder: 'Placeholder 1'
+        },
+        {
+          name: 'name2',
+          type: 'text',
+          placeholder: 'Placeholder 2'
+        },
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          handler: data => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Save',
+          handler: data => {
+            console.log('Saved clicked');
+          }
+        }
+      ]
+    });
+    await prompt.present();
+  }
 }
