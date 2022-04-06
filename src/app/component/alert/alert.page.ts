@@ -33,4 +33,14 @@ export class AlertPage implements OnInit {
     const result = await alert.onDidDismiss();
     console.log(result);
   }
+
+  async showMultipleAlertButtons() {
+    const alert = await alertController.create({
+      header: 'MultipleButtonAlert',
+      subHeader: 'SubTitle',
+      message: 'This is an multiple button alert message',
+      buttons: ['Cancel', 'Save', 'Open']
+    });
+    await alert.present();
+  }
 }
