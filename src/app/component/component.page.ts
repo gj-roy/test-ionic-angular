@@ -28,4 +28,7 @@ export class ComponentPage implements OnInit {
   goBadge() {
     this.router.navigate(['component/badge']);
   }
+  goButton() {
+    this.router.navigate(['component/button']);
+  }
 }
