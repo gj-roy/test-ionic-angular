@@ -131,6 +131,10 @@ const routes: Routes = [
     path: 'modal',
     loadChildren: () => import('./modal/modal.module').then( m => m.ModalPageModule)
   },
+  {
+    path: 'refresher-content',
+    loadChildren: () => import('./refresher-content/refresher-content.module').then( m => m.RefresherContentPageModule)
+  },
 
 
 ];

@@ -87,6 +87,9 @@ export class ComponentPage implements OnInit {
   goRange() {
     this.router.navigate(['component/range']);
   }
+  goRefresherContent() {
+    this.router.navigate(['component/refresher-content']);
+  }
   goSelect() {
     this.router.navigate(['component/select']);
   }
