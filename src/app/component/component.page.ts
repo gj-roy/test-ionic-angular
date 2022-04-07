@@ -64,6 +64,9 @@ export class ComponentPage implements OnInit {
   goList() {
     this.router.navigate(['component/list']);
   }
+  goLoading() {
+    this.router.navigate(['component/loading']);
+  }
   goNav() {
     this.router.navigate(['component/nav']);
   }

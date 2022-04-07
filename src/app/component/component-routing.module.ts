@@ -123,6 +123,10 @@ const routes: Routes = [
     path: 'input',
     loadChildren: () => import('./input/input.module').then( m => m.InputPageModule)
   },
+  {
+    path: 'loading',
+    loadChildren: () => import('./loading/loading.module').then( m => m.LoadingPageModule)
+  },
 
 
 ];
