@@ -49,6 +49,9 @@ export class ComponentPage implements OnInit {
   goGrid() {
     this.router.navigate(['component/grid']);
   }
+  goInfiniteScroll() {
+    this.router.navigate(['component/infinite-scroll']);
+  }
   goItem() {
     this.router.navigate(['component/item']);
   }

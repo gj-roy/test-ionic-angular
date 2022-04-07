@@ -115,6 +115,10 @@ const routes: Routes = [
     path: 'content',
     loadChildren: () => import('./content/content.module').then( m => m.ContentPageModule)
   },
+  {
+    path: 'infinite-scroll',
+    loadChildren: () => import('./infinite-scroll/infinite-scroll.module').then( m => m.InfiniteScrollPageModule)
+  },
 
 
 ];
