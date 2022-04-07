@@ -135,6 +135,10 @@ const routes: Routes = [
     path: 'refresher-content',
     loadChildren: () => import('./refresher-content/refresher-content.module').then( m => m.RefresherContentPageModule)
   },
+  {
+    path: 'reorder',
+    loadChildren: () => import('./reorder/reorder.module').then( m => m.ReorderPageModule)
+  },
 
 
 ];

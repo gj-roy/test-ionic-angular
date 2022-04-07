@@ -1,0 +1,24 @@
+<ion-header translucent={true}>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>reorder</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-reorder-group (ionItemReorder)="onRenderItems($event)" disabled="false">
+      <ion-item *ngFor="let item of listItems">
+        <ion-label>
+          {{item}}
+        </ion-label>
+        <ion-reorder></ion-reorder>
+      </ion-item>
+    </ion-reorder-group>
+  </ion-list>
+  <ion-list class="ion-text-center">
+    <ion-button (click)="getList()">Get Updated List</ion-button>
+  </ion-list>
+</ion-content>

@@ -90,6 +90,9 @@ export class ComponentPage implements OnInit {
   goRefresherContent() {
     this.router.navigate(['component/refresher-content']);
   }
+  goReorder() {
+    this.router.navigate(['component/reorder']);
+  }
   goSelect() {
     this.router.navigate(['component/select']);
   }
