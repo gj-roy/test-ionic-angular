@@ -127,6 +127,10 @@ const routes: Routes = [
     path: 'loading',
     loadChildren: () => import('./loading/loading.module').then( m => m.LoadingPageModule)
   },
+  {
+    path: 'modal',
+    loadChildren: () => import('./modal/modal.module').then( m => m.ModalPageModule)
+  },
 
 
 ];

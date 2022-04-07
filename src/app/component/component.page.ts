@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ModalController } from '@ionic/angular';
+import { ModalPage } from './modal/modal.page';
 
 @Component({
   selector: 'app-component',
@@ -8,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class ComponentPage implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public modalCtrl: ModalController) { }
 
   ngOnInit() {
   }
@@ -67,6 +69,9 @@ export class ComponentPage implements OnInit {
   goLoading() {
     this.router.navigate(['component/loading']);
   }
+  goModal() {
+    this.router.navigate(['component/modal']);
+  }
   goNav() {
     this.router.navigate(['component/nav']);
   }
@@ -105,5 +110,12 @@ export class ComponentPage implements OnInit {
   }
   goCheckBox() {
     this.router.navigate(['component/checkbox']);
+  }
+
+  async showModal() {
+    const modal = await this.modalCtrl.create({
+      component: ModalPage
+    });
+    return await modal.present();
   }
 }
