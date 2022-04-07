@@ -31,5 +31,45 @@
 
     <p>Readonly input</p>
     <ion-input value="Readonly" readonly></ion-input>
+
+    <p>Inputs in List</p>
+    <ion-list>
+      <ion-item>
+        <ion-label>Username</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <div padding>
+      <ion-button color="primary" expand="block">Sign In</ion-button>
+    </div>
+
+    <p>Multiline Text Input</p>
+    <!-- Textarea in an item with a placeholder -->
+    <ion-item>
+      <ion-textarea placeholder="Enter information here..."></ion-textarea>
+    </ion-item>
+
+    <!-- Disabled and readonly textarea in an item with a stacked label -->
+    <ion-item>
+      <ion-label position="stacked">Summary</ion-label>
+      <ion-textarea disabled readonly value="Ionic is a cross-platform mobile apps framework.">
+      </ion-textarea>
+    </ion-item>
+
+    <!-- Textarea that clears the value on edit -->
+    <ion-item>
+      <ion-label>Comment</ion-label>
+      <ion-textarea clearOnEdit="true"></ion-textarea>
+    </ion-item>
+
+    <!-- Textarea with custom number of rows and cols -->
+    <ion-item>
+      <ion-label>Notes</ion-label>
+      <ion-textarea rows="5" cols="10" placeholder="Enter some notes here..."></ion-textarea>
+    </ion-item>
   </div>
 </ion-content>
