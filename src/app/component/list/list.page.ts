@@ -12,4 +12,7 @@ export class ListPage implements OnInit {
   ngOnInit() {
   }
 
+  test(){
+    alert("test");
+  }
 }
