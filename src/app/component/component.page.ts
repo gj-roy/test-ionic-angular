@@ -93,6 +93,9 @@ export class ComponentPage implements OnInit {
   goReorder() {
     this.router.navigate(['component/reorder']);
   }
+  goSegment() {
+    this.router.navigate(['component/segment']);
+  }
   goSelect() {
     this.router.navigate(['component/select']);
   }

@@ -139,6 +139,10 @@ const routes: Routes = [
     path: 'reorder',
     loadChildren: () => import('./reorder/reorder.module').then( m => m.ReorderPageModule)
   },
+  {
+    path: 'segment',
+    loadChildren: () => import('./segment/segment.module').then( m => m.SegmentPageModule)
+  },
 
 
 ];
